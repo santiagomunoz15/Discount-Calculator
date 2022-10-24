@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y Descuentos</h1>
+    </header>
+    <main>
+        <div class="main-container">
+
+            <p>Ingresa el precio del producto y a continuación, ingresa el porcentaje de descuento que tiene el producto para saber cuál es el precio final del producto.</p>
+            
+            
+            <div class="main-input-container">
+    
+                <div class="product-price">
+                    <input onblur="" placeholder="$ 10" type="number" name="" id="price">
+                    <span>Precio del producto</span>
+        
+                </div>
+        
+                <div class="product-discount">
+        
+                    <input onblur="" placeholder="10 %" type="number" name="" id="percent">
+                    <span>Descuento del producto (%)</span>
+        
+                </div>
+        
+                <div class="product-result">
+        
+                    
+
+                    <div class="result-container">
+
+                        <div class="calculate-box" id="calculate-box">
+                            <input onclick="priceCalculator ()" type="button" value="Calcular">
+
+                        </div>
+
+                        <div class="result-box" id="result-box">
+                            <p>$</p>
+                            <p id="result">150,25</p>
+                        </div>
+                    </div>
+                    <span>Precio con el descuento</span>
+                </div>
+            </div>
+            
+            
+            
+            <div class="extras">
+                <a onclick="reset ()">Reset</a>
+                <p id="extras-text"></p>
+            </div>
+        
+        
+        
+        </div>
+
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

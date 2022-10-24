@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    align-items: center;
+    display: grid;
+    text-align: center;
+    grid-template-rows: 18vh 82vh; 
+    color: #393E46;
+}
+
+header {
+    background-color: #393E46;
+    height: 100%;
+    display: grid;
+    place-content: center center;
+    color: #EEEEEE;
+}
+
+main {
+    background-color: #F7F7F7;
+    height: 100%;
+}
+
+.main-container {
+    box-shadow: 1px 1px 113px -85px rgba(0,0,0,0.89);
+    -webkit-box-shadow: 1px 1px 113px -85px rgba(0,0,0,0.89);
+    -moz-box-shadow: 1px 1px 113px -85px rgba(0,0,0,0.89);
+    max-width: 600px;
+    height: 100%;
+    padding: 40px 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.main-input-container {
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 40px;
+    gap: 8px;
+}
+main div {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    gap: 8px;
+}
+
+.main-container input {
+    width: 100%;
+    background-color: #F7F7F7;
+    text-align: center;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #393E46;
+    color: #393E46;
+}
+
+span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.1);
+}
+
+
+.result-container {
+    border-radius: 12px;
+    height: 50px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    place-items: center center;
+    font-weight: 600;
+}
+
+
+
+/* 
+
+grid-template-columns: 40% 10%;
+gap: 8px; 
+
+*/
+
+.calculate-box {
+    display: grid;
+}
+
+.calculate-box input {
+    color: #EEEEEE;
+    background-color: transparent;
+    width: 100%;
+    font-weight: 600;
+}
+
+.result-box {
+    display: none;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    grid-template-rows: 1fr;
+}
+
+
+
+
+
+
+
+.extras {
+    display: grid;
+    text-align: center;
+    font-weight: 600;
+    font-size: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.extras a {
+    text-decoration: underline;
+    font-size: 14px;
+}
